@@ -26,6 +26,7 @@
 		65AEF73718DFC587008E7675 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AEF72518DFC587008E7675 /* photo-frame.png */; };
 		65AEF73818DFC587008E7675 /* photo-frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65AEF72618DFC587008E7675 /* photo-frame@2x.png */; };
 		65AEF73B18DFC5CD008E7675 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AEF73A18DFC5CD008E7675 /* Recipe.m */; };
+		82774EDAE6434FC09EC92A08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E13249C8CBCB45A0A79FDAEE /* libPods.a */; };
 		F419149E158D558600E54887 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F419149D158D558600E54887 /* RecipeDetailViewController.m */; };
 		F4379A48159741E700CAD93E /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4379A47159741E600CAD93E /* AboutViewController.m */; };
 		F4379A4C1597775500CAD93E /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4379A4A1597775500CAD93E /* about.jpg */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49A28D08CCD4496CA14778A7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		65AEF71518DFC587008E7675 /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
 		65AEF71618DFC587008E7675 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
 		65AEF71718DFC587008E7675 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		65AEF72618DFC587008E7675 /* photo-frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame@2x.png"; sourceTree = "<group>"; };
 		65AEF73918DFC5CD008E7675 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		65AEF73A18DFC5CD008E7675 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		E13249C8CBCB45A0A79FDAEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F419149C158D558600E54887 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		F419149D158D558600E54887 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		F4379A46159741E600CAD93E /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
@@ -90,18 +93,46 @@
 				F4AA6C2C1589A2DF0093D97E /* UIKit.framework in Frameworks */,
 				F4AA6C2E1589A2DF0093D97E /* Foundation.framework in Frameworks */,
 				F4AA6C301589A2DF0093D97E /* CoreGraphics.framework in Frameworks */,
+				82774EDAE6434FC09EC92A08 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6536047918E2926F000D1CC7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F4379A4A1597775500CAD93E /* about.jpg */,
+				65AEF72518DFC587008E7675 /* photo-frame.png */,
+				65AEF72618DFC587008E7675 /* photo-frame@2x.png */,
+				65AEF71718DFC587008E7675 /* egg_benedict.jpg */,
+				65AEF71818DFC587008E7675 /* full_breakfast.jpg */,
+				65AEF71918DFC587008E7675 /* green_tea.jpg */,
+				65AEF71A18DFC587008E7675 /* ham_and_cheese_panini.jpg */,
+				65AEF71B18DFC587008E7675 /* ham_and_egg_sandwich.jpg */,
+				65AEF71C18DFC587008E7675 /* hamburger.jpg */,
+				65AEF71D18DFC587008E7675 /* instant_noodle_with_egg.jpg */,
+				65AEF71E18DFC587008E7675 /* japanese_noodle_with_pork.jpg */,
+				65AEF71F18DFC587008E7675 /* mushroom_risotto.jpg */,
+				65AEF72018DFC587008E7675 /* noodle_with_bbq_pork.jpg */,
+				65AEF72118DFC587008E7675 /* starbucks_coffee.jpg */,
+				65AEF72218DFC587008E7675 /* thai_shrimp_cake.jpg */,
+				65AEF72318DFC587008E7675 /* vegetable_curry.jpg */,
+				65AEF72418DFC587008E7675 /* white_chocolate_donut.jpg */,
+				65AEF71518DFC587008E7675 /* angry_birds_cake.jpg */,
+				65AEF71618DFC587008E7675 /* creme_brelee.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		F4AA6C1C1589A2DF0093D97E = {
 			isa = PBXGroup;
 			children = (
 				F4AA6C311589A2DF0093D97E /* RecipeBook */,
 				F4AA6C2A1589A2DF0093D97E /* Frameworks */,
 				F4AA6C281589A2DF0093D97E /* Products */,
+				49A28D08CCD4496CA14778A7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +150,7 @@
 				F4AA6C2B1589A2DF0093D97E /* UIKit.framework */,
 				F4AA6C2D1589A2DF0093D97E /* Foundation.framework */,
 				F4AA6C2F1589A2DF0093D97E /* CoreGraphics.framework */,
+				E13249C8CBCB45A0A79FDAEE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,38 +158,20 @@
 		F4AA6C311589A2DF0093D97E /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
-				65AEF71518DFC587008E7675 /* angry_birds_cake.jpg */,
-				65AEF71618DFC587008E7675 /* creme_brelee.jpg */,
-				65AEF71718DFC587008E7675 /* egg_benedict.jpg */,
-				65AEF71818DFC587008E7675 /* full_breakfast.jpg */,
-				65AEF71918DFC587008E7675 /* green_tea.jpg */,
-				65AEF71A18DFC587008E7675 /* ham_and_cheese_panini.jpg */,
-				65AEF71B18DFC587008E7675 /* ham_and_egg_sandwich.jpg */,
-				65AEF71C18DFC587008E7675 /* hamburger.jpg */,
-				65AEF71D18DFC587008E7675 /* instant_noodle_with_egg.jpg */,
-				65AEF71E18DFC587008E7675 /* japanese_noodle_with_pork.jpg */,
-				65AEF71F18DFC587008E7675 /* mushroom_risotto.jpg */,
-				65AEF72018DFC587008E7675 /* noodle_with_bbq_pork.jpg */,
-				65AEF72118DFC587008E7675 /* starbucks_coffee.jpg */,
-				65AEF72218DFC587008E7675 /* thai_shrimp_cake.jpg */,
-				65AEF72318DFC587008E7675 /* vegetable_curry.jpg */,
-				65AEF72418DFC587008E7675 /* white_chocolate_donut.jpg */,
-				65AEF72518DFC587008E7675 /* photo-frame.png */,
-				65AEF72618DFC587008E7675 /* photo-frame@2x.png */,
+				6536047918E2926F000D1CC7 /* images */,
 				F4AA6C3A1589A2DF0093D97E /* RecipeBookAppDelegate.h */,
 				F4AA6C3B1589A2DF0093D97E /* RecipeBookAppDelegate.m */,
 				F4AA6C3D1589A2DF0093D97E /* MainStoryboard.storyboard */,
 				F4AA6C401589A2DF0093D97E /* RecipeBookViewController.h */,
 				F4AA6C411589A2DF0093D97E /* RecipeBookViewController.m */,
-				F4AA6C321589A2DF0093D97E /* Supporting Files */,
-				F419149C158D558600E54887 /* RecipeDetailViewController.h */,
-				F419149D158D558600E54887 /* RecipeDetailViewController.m */,
 				F4379A46159741E600CAD93E /* AboutViewController.h */,
 				F4379A47159741E600CAD93E /* AboutViewController.m */,
-				F4379A4A1597775500CAD93E /* about.jpg */,
 				F4379A4B1597775500CAD93E /* about.html */,
+				F419149C158D558600E54887 /* RecipeDetailViewController.h */,
+				F419149D158D558600E54887 /* RecipeDetailViewController.m */,
 				65AEF73918DFC5CD008E7675 /* Recipe.h */,
 				65AEF73A18DFC5CD008E7675 /* Recipe.m */,
+				F4AA6C321589A2DF0093D97E /* Supporting Files */,
 			);
 			path = RecipeBook;
 			sourceTree = "<group>";
@@ -180,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4AA6C451589A2DF0093D97E /* Build configuration list for PBXNativeTarget "RecipeBook" */;
 			buildPhases = (
+				171B809695F542CE9D76249A /* Check Pods Manifest.lock */,
 				F4AA6C231589A2DF0093D97E /* Sources */,
 				F4AA6C241589A2DF0093D97E /* Frameworks */,
 				F4AA6C251589A2DF0093D97E /* Resources */,
+				23AEF6A6E26C4348BA0036FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +266,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		171B809695F542CE9D76249A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23AEF6A6E26C4348BA0036FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4AA6C231589A2DF0093D97E /* Sources */ = {
@@ -334,10 +383,12 @@
 		};
 		F4AA6C461589A2DF0093D97E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A28D08CCD4496CA14778A7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
 				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -345,10 +396,12 @@
 		};
 		F4AA6C471589A2DF0093D97E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A28D08CCD4496CA14778A7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecipeBook/RecipeBook-Prefix.pch";
 				INFOPLIST_FILE = "RecipeBook/RecipeBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
